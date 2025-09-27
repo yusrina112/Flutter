@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_yusrina/tugas/quiz.dart';
 //import 'package:flutter_yusrina/latihan/ekspand.dart';
 //import 'package:flutter_yusrina/latihan/stak.dart';
-import 'package:flutter_yusrina/tugas/tugas2.dart';
+// import 'package:flutter_yusrina/tugas/tugas2.dart';
 //import 'package:flutter_yusrina/tugas/layout.dart';
 // import 'package:flutter_yusrina/latihan/ekspand.dart';
 void main(List<String> args) {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Tugas2(),
+      home: Quiz(),
     );
   }
 }
