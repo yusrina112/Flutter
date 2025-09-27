@@ -10,7 +10,7 @@ class Quiz extends StatelessWidget {
       Center(
       child:  Container(
         width: 600,
-        height: 2000,
+        // height: 2000,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: const Color.fromARGB(255, 245, 241, 241)
@@ -162,11 +162,29 @@ class Quiz extends StatelessWidget {
                SizedBox(height: 12),
                Text(
                 "Area of Focus",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                ),
                SizedBox(height: 12),
-               
-                      ],
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 150,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Center(
+                      child: Image.asset(
+                        'images/003.png',
+                        height: 20,
+                      ),
+                    ),
+                  ),
+                ],
+               ),
+              ],
                       
                     )
 
