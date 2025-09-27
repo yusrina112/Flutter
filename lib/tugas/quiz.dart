@@ -103,9 +103,9 @@ class Quiz extends StatelessWidget {
                   ],
                  ),
                 ),
-                SizedBox(
-                          height: 50,
-                        ),
+                // SizedBox(
+                //           height: 50,
+                //         ),
               // ),
                Container(
                 width: double.infinity,
@@ -155,11 +155,17 @@ class Quiz extends StatelessWidget {
                                 ],
                               ),
                               ),
+                          ),           
+                        ],
                           ),
-                          
-                            ],
-                          ),
-               )
+               ),
+               SizedBox(height: 12),
+               Text(
+                "Area of Focus",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+               ),
+               SizedBox(height: 12),
+               
                       ],
                       
                     )
