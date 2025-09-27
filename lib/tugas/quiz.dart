@@ -98,25 +98,68 @@ class Quiz extends StatelessWidget {
                           ) ,
                           child: Icon( Icons.play_arrow, size: 20),
                         ),
-                        
-                     
                       ],
                     ),
-                    ],
-                    
-                  ) ,
+                  ],
+                 ),
                 ),
                 SizedBox(
                           height: 50,
                         ),
               // ),
-               Stack(
-                      children: [
-                        Image.asset('images/002.jpg'),
-                        Positioned(
-                              bottom: 20, child:Image.asset('images/001.png'),) 
-                          ],
-                        )
+               Container(
+                width: double.infinity,
+                height: 140,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                 child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            bottom: 0,
+                            child: Image.asset('images/002.jpg', fit: BoxFit.cover),
+                          ),
+                          Positioned(
+                            left: 10,
+                            bottom: 10,
+                            child: Image.asset('images/001.png'),
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 140, right: 200),
+                              child: Column( 
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: const[
+                                  Text(
+                                    "You are doing great",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(height: 4),
+                                  Text(
+                                    "keep it up",
+                                    style: TextStyle(color: Colors.grey, fontSize: 14),
+                                  ),
+                                  Text(
+                                    "stick to your plan",
+                                    style: TextStyle(color: Colors.grey, fontSize: 14),
+                                  ),
+                                ],
+                              ),
+                              ),
+                          ),
+                          
+                            ],
+                          ),
+               )
                       ],
                       
                     )
