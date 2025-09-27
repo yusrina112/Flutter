@@ -17,6 +17,7 @@ class Quiz extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(20),
+          child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
              spacing: 8,
@@ -34,7 +35,7 @@ class Quiz extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.all(20),
-                  width: 400,
+                  width: 700,
                   height: 200,
                   decoration: BoxDecoration(
                    gradient: LinearGradient(colors: [
@@ -50,7 +51,7 @@ class Quiz extends StatelessWidget {
                       bottomRight: Radius.circular(20),
                       bottomLeft: Radius.circular(20)
                     ),
-                    
+                  
                     // color: Colors.purpleAccent.withOpacity(0.2)
                   ),
                   child:Column(
@@ -87,7 +88,7 @@ class Quiz extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 250,
+                      width: 400,
                     ),
                         Container(
                           width: 30,
@@ -104,8 +105,8 @@ class Quiz extends StatelessWidget {
                  ),
                 ),
                 // SizedBox(
-                //           height: 50,
-                //         ),
+                // height: 50,
+                // ),
               // ),
                Container(
                 width: double.infinity,
@@ -166,7 +167,7 @@ class Quiz extends StatelessWidget {
                ),
                SizedBox(height: 12),
                Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
                     width: 150,
@@ -178,19 +179,33 @@ class Quiz extends StatelessWidget {
                     child: Center(
                       child: Image.asset(
                         'images/003.png',
-                        height: 20,
+                        height: 130,
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    width: 150,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Center(
+                      child: Image.asset(
+                        'images/004.png',
+                        height: 140,
                       ),
                     ),
                   ),
                 ],
                ),
-              ],
-                      
-                    )
-
+              ],      
+            ),
           ),
           ),
+        ),
       ),
-      );
+    );
   }
 }
