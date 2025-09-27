@@ -92,12 +92,33 @@ class Quiz extends StatelessWidget {
                       
                    
                     ],
-                  )
+                  ),
                   ],
                   
                 ) ,
-              )
+              ),
+              SizedBox(
+                        height: 50,
+                      ),
             // ),
+             Stack(
+                    children: [
+                      Image.asset('images/002.jpg'),
+                      
+                      Row(
+                        children: [
+                          Image.asset('images/001.png'),
+                           Text('60 min', style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      color: Colors.white
+                    ),
+                  ),
+                        ],
+                      )
+                    ],
+                    
+                  )
           ],
         ),
         ),
