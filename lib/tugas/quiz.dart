@@ -78,20 +78,19 @@ class Quiz extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 50,
+                    width: 200,
                   ),
-                  Stack(
-                    children: [
                       Container(
-                        width: 100,
-                        height: 100,
+                        width: 50,
+                        height: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           color: Colors.white
                         ) ,
-                      )
-                    ],
-                  )
+                        child: Icon( Icons.play_arrow, size: 30),
+                      ),
+                      
+                   
                     ],
                   )
                   ],
